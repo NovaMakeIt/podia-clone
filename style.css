@@ -20,7 +20,7 @@ header {
     flex-direction: row;
     justify-content: center;
     /*outline: red 1px solid;*/
-    /*background-color: #fdfbf9;*/
+    background-color: #fdfbf9;
 }
 
 .banner-navigation {
@@ -72,7 +72,7 @@ nav > ul {
 
 li {
     list-style: none;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 25px 15px 25px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -91,7 +91,7 @@ button {
 }
 
 .button-connexion {
-    padding: 10px 20px 10px 20px;
+    padding: 15px 25px 15px 25px;
     border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
@@ -104,8 +104,8 @@ button {
     background-color: #f5efeb;
 }
 
-.button-inscription {
-    padding: 10px 20px 10px 20px;
+.button-inscription, .button-essai {
+    padding: 15px 25px 15px 25px;
     border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
@@ -115,7 +115,7 @@ button {
     color: #fdfbf9;
 }
 
-.button-inscription:hover {
+.button-inscription:hover, .button-essai:hover {
     background-color: #372275;
 }
 
@@ -125,19 +125,22 @@ button {
 
 img {
     max-width: 1265px;
+    /*display: block;*/
 }
 
 .section-home-chart {
     width: 100%;
     display: flex;
+    margin-top: 130px;
     flex-direction: column;
     align-content: center;
     outline: green 1px solid;
 }
 .test {
-    /*width: 1265px;*/
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     outline: rgb(128, 0, 128) 1px solid;
 }
@@ -153,8 +156,8 @@ img {
 }
 
 .home-chart {
-    /*max-width: 1265px;*/
     display: flex;
+    padding: 0 170px 0 170px;
     flex-direction: column;
     align-items: center;
     outline: red 1px solid;
@@ -162,6 +165,7 @@ img {
 
 h1 {
     font-weight: 600;
+    font-family: "Inter", sans-serif;
     font-size: 50px;
     line-height: 66px;
     color: rgb(26, 23, 21);
@@ -169,9 +173,14 @@ h1 {
 
 p {
     font-weight: 400;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 36px;
     color: rgb(92, 88, 86);
+}
+
+.button-essai {
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 1265px) {

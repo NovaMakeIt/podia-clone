@@ -1,0 +1,9 @@
+.faq {
+    text-align: center;
+    outline: red 1px solid;
+}
+
+.faq_1 {
+    display: flex;
+    flex-direction: row;
+}

@@ -6,7 +6,6 @@
 
 body {
     background-color: #fdfbf9;
-    height: 2000px;
     padding: 0 90px 0 90px;
 }
 
@@ -134,7 +133,7 @@ img {
     margin-top: 130px;
     flex-direction: column;
     align-content: center;
-    outline: green 1px solid;
+    /*outline: green 1px solid;*/
 }
 .test {
     justify-content: space-between;
@@ -142,7 +141,7 @@ img {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    outline: rgb(128, 0, 128) 1px solid;
+    /*outline: rgb(128, 0, 128) 1px solid;*/
 }
 
 .test2 {
@@ -152,7 +151,7 @@ img {
     /*align-items: center;*/
     /*align-content: center;*/
     /*justify-content: center;*/
-    outline: rgb(128, 0, 128) 1px solid;
+    /*outline: rgb(128, 0, 128) 1px solid;*/
 }
 
 .home-chart {
@@ -160,7 +159,7 @@ img {
     padding: 0 170px 0 170px;
     flex-direction: column;
     align-items: center;
-    outline: red 1px solid;
+    /*outline: red 1px solid;*/
 }
 
 h1 {
@@ -168,6 +167,14 @@ h1 {
     font-family: "Inter", sans-serif;
     font-size: 50px;
     line-height: 66px;
+    color: rgb(26, 23, 21);
+}
+
+h2 {
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    line-height: 52px;
     color: rgb(26, 23, 21);
 }
 

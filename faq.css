@@ -1,9 +1,51 @@
 .faq {
     text-align: center;
+    padding: 0 170px 0 170px;
     outline: red 1px solid;
 }
 
+button {
+    cursor: pointer;
+}
+
+.faq_button_option {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.child {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.information_option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    outline: green 1px solid;
+}
+
+.information_picture{
+    right: 0;
+    outline: green 1px solid;
+}
+
+.img_faq {
+    max-width: 616px;
+    max-height: 554px;
+    object-fit: cover;
+}
+
 .faq_1 {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    max-height: 556px;
+    align-items: center;
+    text-align: start;
+    outline: blueviolet 1px solid;
 }

@@ -11,7 +11,8 @@ button {
 .faq_button_option {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 615px;
+    height: 20px;
 }
 
 .child {
@@ -48,4 +49,33 @@ button {
     align-items: center;
     text-align: start;
     outline: blueviolet 1px solid;
+}
+
+.p-title-faq {
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 22px;
+    color: rgb(156, 136, 129);
+}
+
+.h2-faq {
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 44px;
+}
+
+.p-description-faq {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.plus-faq {
+    max-width: 190px;
+    /*min-height: 50px;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f5efeb;
+    border-radius: 25px;
 }

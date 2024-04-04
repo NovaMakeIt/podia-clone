@@ -8,25 +8,20 @@ button {
     cursor: pointer;
 }
 
-.faq_button_option {
-    display: flex;
-    justify-content: space-between;
-    max-width: 615px;
-    height: 20px;
-}
-
-.parent {
-    /*width: 50%;*/
+.parent-1 {
+    /*height: 100%;*/
+    padding-right: 30px;
+    width: 50%;
     outline: blue 1px solid;
 }
 
-.child {
-    /*position: absolute;*/
-    /*width: 100%;*/
-    height: 100%;
+.parent-2 {
+    /*height: 100%;*/
+    width: 50%;
+    outline: blue 1px solid;
 }
 
-.information_option{
+.information_option {
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
@@ -35,13 +30,13 @@ button {
 }
 
 .information_picture{
-    /*right: 0;*/
+    display: flex;
     outline: green 1px solid;
 }
 
 .img_faq {
-    /*max-width: 616px;
-    max-height: 554px;*/
+    /*max-width: 616px;*/
+    max-height: 554px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -76,6 +71,22 @@ button {
 .p-description-faq {
     font-size: 18px;
     line-height: 32px;
+}
+
+.faq-bloc { 
+    outline: red 1px solid;
+}
+
+.faq_button_option {
+    outline: red 1px solid;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 5px 5px 0px;
+    background-color: #FDFBF9;
+    margin-bottom: 20px;
 }
 
 .plus-faq {

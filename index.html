@@ -69,14 +69,23 @@
                             <h3>Réalisez des ventes sur votre site</h3>
                             <i class="fa-solid fa-plus"></i>
                         </button>
+                        <div class="faq_content">
+                            <p>This is the content for 'Réalisez des ventes sur votre site'.</p>
+                        </div>
                         <button class="faq_button_option">
                             <h3>Pas besoin de s’y connaître en code ou design</h3>
                             <i class="fa-solid fa-plus"></i>
                         </button>
+                        <div class="faq_content">
+                            <p>This is the content for 'Pas besoin de s’y connaître en code ou design'.</p>
+                        </div>
                         <button class="faq_button_option">
                             <h3>Un site à votre image</h3>
                             <i class="fa-solid fa-plus"></i>
                         </button>
+                        <div class="faq_content">
+                            <p>This is the content for 'Un site à votre image'.</p>
+                        </div>
                     </div>
                     <button class="plus-faq">En savoir plus</button>
                 </div>
@@ -102,4 +111,21 @@
         </div>-->
     </section>
 </body>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll('.faq_button_option');
+        
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.classList.toggle('active');
+                const icon = this.querySelector('i');
+                icon.classList.toggle('fa-plus');
+                icon.classList.toggle('fa-minus');
+            });
+        });
+    });
+</script>
+
 </html>

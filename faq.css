@@ -97,3 +97,10 @@ button {
     background-color: #f5efeb;
     border-radius: 25px;
 }
+
+.faq_content {
+    display: none; /* Initially hide the content */
+}
+.active {
+    display: block; /* Display the content when active */
+}

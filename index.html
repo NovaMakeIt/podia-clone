@@ -66,25 +66,27 @@
                     <p class="p-description-faq">Un site gratuit, superbe et facile à créer. Podia s’occupe du côté technique et vous livre le tout, clé en main: il ne vous reste plus qu’à lancer votre site et vous pouvez vous remettre au travail.</p>
                     <div class="faq-bloc">
                         <button class="faq_button_option">
-                            <h3>Réalisez des ventes sur votre site</h3>
+                            <h3 class="h3-faq">Réalisez des ventes sur votre site</h3>
                             <i class="fa-solid fa-plus"></i>
                         </button>
                         <div class="faq_content">
-                            <p>This is the content for 'Réalisez des ventes sur votre site'.</p>
+                            <p class="answer-faq">This is the content for 'Réalisez des ventes sur votre site'.</p>
                         </div>
                         <button class="faq_button_option">
-                            <h3>Pas besoin de s’y connaître en code ou design</h3>
+                            <h3 class="h3-faq">Pas besoin de s’y connaître en code ou design</h3>
                             <i class="fa-solid fa-plus"></i>
                         </button>
                         <div class="faq_content">
-                            <p>This is the content for 'Pas besoin de s’y connaître en code ou design'.</p>
+                            <p class="answer-faq">This is the content for 'Pas besoin de s’y connaître en code ou design'.</p>
                         </div>
                         <button class="faq_button_option">
-                            <h3>Un site à votre image</h3>
+                            <h3 class="h3-faq">Un site à votre image</h3>
                             <i class="fa-solid fa-plus"></i>
                         </button>
                         <div class="faq_content">
-                            <p>This is the content for 'Un site à votre image'.</p>
+                            <div class="faq_content2">
+                                <p class="answer-faq">This is the content for 'Un site à votre image'.</p>
+                            </div>
                         </div>
                     </div>
                     <button class="plus-faq">En savoir plus</button>
@@ -119,10 +121,26 @@
         buttons.forEach(button => {
             button.addEventListener('click', function() {
                 const content = this.nextElementSibling;
-                content.classList.toggle('active');
+                const isActive = content.classList.contains('active');
+                
+                // Hide all content
+                document.querySelectorAll('.faq_content').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle active class for the clicked item
+                content.classList.toggle('active', !isActive);
+                
+                // Toggle icon class for all buttons
+                document.querySelectorAll('.faq_button_option i').forEach(icon => {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                });
+                
+                // Toggle icon class for the clicked button
                 const icon = this.querySelector('i');
-                icon.classList.toggle('fa-plus');
-                icon.classList.toggle('fa-minus');
+                icon.classList.toggle('fa-plus', isActive);
+                icon.classList.toggle('fa-minus', !isActive);
             });
         });
     });

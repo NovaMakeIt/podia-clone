@@ -89,6 +89,21 @@ button {
     margin-bottom: 20px;
 }
 
+.h3-faq {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.faq_button_option:hover, .faq_button_option:focus {
+    .h3-faq, i {
+    color: rgb(75, 42, 173);
+    }
+}
+
 .plus-faq {
     max-width: 190px;
     /*min-height: 50px;*/
@@ -100,7 +115,18 @@ button {
 
 .faq_content {
     display: none; /* Initially hide the content */
+    width: 100%;
 }
+
+.faq_content2 {
+    display: flex;
+}
+
+.answer-faq {
+    font-size: 15px;
+    line-height: 27px;
+}
+
 .active {
     display: block; /* Display the content when active */
 }

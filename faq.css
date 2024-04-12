@@ -71,14 +71,19 @@ button {
 .p-description-faq {
     font-size: 18px;
     line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .faq-bloc { 
-    outline: red 1px solid;
+    /*outline: red 1px solid;*/
+}
+
+.faq-bloc-margin { 
+    margin-bottom: 10px;
 }
 
 .faq_button_option {
-    outline: red 1px solid;
     display: flex;
     text-align: center;
     align-items: center;
@@ -86,7 +91,6 @@ button {
     width: 100%;
     padding: 5px 5px 5px 0px;
     background-color: #FDFBF9;
-    margin-bottom: 20px;
 }
 
 .h3-faq {
@@ -105,21 +109,41 @@ button {
 }
 
 .plus-faq {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     max-width: 190px;
     /*min-height: 50px;*/
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #f5efeb;
-    border-radius: 25px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.plus-faq:hover {
+    background-color: #C2BDBA;
+    .fa-arrow-right {
+        transform: translateX(5px);
+    }
+}
+
+.p-plus-faq {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    margin-right: 5px;
+    color: rgb(26, 23, 21);
+}
+
+.fa-arrow-right {
+    transition: transform 0.5s;
 }
 
 .faq_content {
     display: none; /* Initially hide the content */
     width: 100%;
-}
-
-.faq_content2 {
-    display: flex;
 }
 
 .answer-faq {

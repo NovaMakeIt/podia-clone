@@ -44,10 +44,10 @@ button {
 
 .faq_1 {
     /*position: relative;*/
+    margin-top: 110px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    max-height: 556px;
     align-items: center;
     text-align: start;
     outline: blueviolet 1px solid;

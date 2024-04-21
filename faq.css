@@ -2,7 +2,7 @@
     text-align: center;
     padding: 0 170px 0 170px;
     margin-top: 110px;
-    outline: red 1px solid;
+    /*outline: red 1px solid;*/
 }
 
 button {
@@ -13,13 +13,13 @@ button {
     /*height: 100%;*/
     padding-right: 30px;
     width: 50%;
-    outline: blue 1px solid;
+    /*outline: blue 1px solid;*/
 }
 
 .parent-2 {
     /*height: 100%;*/
     width: 50%;
-    outline: blue 1px solid;
+    /*outline: blue 1px solid;*/
 }
 
 .information_option {
@@ -27,12 +27,12 @@ button {
     flex-direction: column;
     /*justify-content: space-between;*/
     /*left: 0;*/
-    outline: green 1px solid;
+    /*outline: green 1px solid;*/
 }
 
 .information_picture{
     display: flex;
-    outline: green 1px solid;
+    /*outline: green 1px solid;*/
 }
 
 .img_faq {
@@ -49,7 +49,7 @@ button {
     flex-direction: row;
     align-items: center;
     text-align: start;
-    outline: blueviolet 1px solid;
+    /*outline: blueviolet 1px solid;*/
 }
 
 .p-title-faq {
